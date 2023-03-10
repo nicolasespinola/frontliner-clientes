@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login</title>
+    <link rel="icon" sizes="180x180" href="../assets/idle/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: #8E37ED; margin: 0px;">
+    <div class="d-flex flex-row justify-content-between">
+
+        <div class="d-flex flex-column justify-content-between align-items-start w-sm-100" style="height: 100vh; width:100vw; padding: 30px 0px 55px 50px; background-color: #8E37ED; border-radius: 0px 80px 80px 0px;">
+            <img src="../assets/ui/logo-white.svg" alt="logo-variation-1" height="39px"/>
+            <div class="d-flex flex-column justify-content-center align-items-center box-sh datos-pers-box">
+                <h2 class="sub-text-bold text-color-black-lilac m-0 p-0 mb-2">
+                    Bienvenidos
+                </h2>
+                <p class="little-text-regular text-center">Completa los datos adicionales. Esta información es necesaria para el correcto embarque de los paquetes</p>
+                <div class="d-flex flex-column w-100" style="gap:10px;">
+                  <div class="w-100 d-flex flex-row" style="gap:10px;">
+                    <div class="input w-50">
+                        <p class="xs-text-sb text-color-dark-gray">País de Origen <span class="text-color-red">*</span> </p>
+                        <select class="input-field little-text-regular text-color-black-lilac w-100">
+                            <option value="1">Paraguay</option>
+                            <option value="2">Argentina</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Bolivia</option>
+                            <option value="5">Chile</option>
+                            <option value="6">Colombia</option>
+                        </select>
+                    </div>
+                    <div class="input w-50">
+                        <p class="xs-text-sb text-color-dark-gray">Ciudad <span class="text-color-red">*</span> </p>
+                        <select class="input-field little-text-regular text-color-black-lilac w-100">
+                            <option value="1">Asuncion</option>
+                            <option value="2">Ciudad del Este</option>
+                            <option value="3">Encarnacion</option>
+                            <option value="4">San Lorenzo</option>
+                            <option value="5">Villarrica</option>
+                            <option value="6">Capiata</option>
+                        </select>
+                    </div>
+                  </div>
+                <div class="w-100 d-flex flex-row" style="gap:10px;">
+                        <div class="input w-100">
+                            <p class="xs-text-sb text-color-dark-gray">Dirección <span class="text-color-red">*</span> </p>
+                            <div class="d-flex" style="gap:12px">
+                                <input type="text" class="input-select little-text-regular text-color-black-lilac m-0 w-100" placeholder="Ingresa tu dirección"/>
+                            </div>
+                        </div>
+                </div>
+                <div class="d-flex flex-column w-100" style="gap:10px;">
+                    <div class="w-100 d-flex flex-row" style="gap:10px;">
+                      <div class="input w-50">
+                          <p class="xs-text-sb text-color-dark-gray">Teléfono <span class="text-color-red">*</span> </p>
+                          <div class="d-flex">
+                            <select class="input-field little-text-regular text-color-black-lilac" style="border-radius: 10px 0px 0px 10px; width: 40%;">
+                                <option value="1">+595</option>
+                                  <option value="2">+54</option>
+                                  <option value="3">+55</option>
+                                  <option value="4">+591</option>
+                                  <option value="5">+56</option>
+                                  <option value="6">+57</option>
+                            </select>
+                              <input type="text" class="input-select little-text-regular text-color-black-lilac m-0 w-75" style="border-radius: 0px 10px 10px 0px; width: 60%;"/>
+                          </div>
+                          
+                      </div>
+                      <div class="input w-50">
+                        <p class="xs-text-sb text-color-dark-gray">Celular <span class="text-color-red">*</span> </p>
+                        <div class="d-flex">
+                          <select class="input-field little-text-regular text-color-black-lilac" style="border-radius: 10px 0px 0px 10px; width: 40%;">
+                              <option value="1">+595</option>
+                                <option value="2">+54</option>
+                                <option value="3">+55</option>
+                                <option value="4">+591</option>
+                                <option value="5">+56</option>
+                                <option value="6">+57</option>
+                          </select>
+                            <input type="text" class="input-select little-text-regular text-color-black-lilac m-0 w-75" style="border-radius: 0px 10px 10px 0px; width: 60%;"/>
+                        </div>
+                        
+                    </div>
+                    </div>
+                
+
+                </div>
+                <div class="d-flex w-100 mb-3" style="gap: 10px;">
+                    <button class="btn-scd small-text-sb mt-2 mb-1 w-50">Atrás</button>
+                    <button class="btn-fr btn-shw-1 small-text-sb mt-2 mb-1 w-50">Siguiente</button>
+                </div>
+                
+            </div>
+        </div>
+        <h5 class="xs-text-regular text-color-white m-0 mt-3 p-0 align-self-center">
+            Copyright © 2015, FRONTLINER. 
+        </h5>
+
+    </div>
+</body>
+</html>
