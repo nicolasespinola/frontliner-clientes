@@ -512,3 +512,37 @@ select {
     border-radius: 30px;
     background-color: var(--lilac-100);
 }
+
+.login-content {
+    padding: 30px 0px 55px 50px;
+    background-color: #fff;
+    border-radius: 0px 80px 80px 0px;
+    width: 55vw;
+}
+
+@media (max-width: 1148px) {
+    .login-content {
+        padding: 30px 0px 50px 20px;
+        background-color: #fff;
+        width: 100vw;
+        border-radius: 20px 20px 0px 0px;
+        justify-self: flex-end;
+        height: 100%!important;
+    }
+
+    .logo-lillac {
+        padding: 0px 0px 0px 50px;
+    }
+
+    .selector-register {
+        width: 100% !important;
+    }
+
+    .carousel-content {
+        width: 400px !important;
+    }
+
+    .login-child {
+        max-width: 75%;
+    }
+}
