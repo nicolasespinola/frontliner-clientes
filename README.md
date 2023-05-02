@@ -1,8 +1,8 @@
-# Frontliner Administrador (HTML)
+# Frontliner Clientes (HTML)
 
 [![N|Solid](./assets/idle/bootstrap.png)](https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css)
 
-Maquetado en HTML para el administrador de paquetes de la empresa paraguaya de courier  [Frontliner](https://frontliner.com.py/).
+Maquetado en HTML para la aplicación web de clientes de la empresa paraguaya de courier  [Frontliner](https://frontliner.com.py/).
 
 - Adaptado para escritorio
 - Estilos adaptados a la paleta de colores
@@ -16,17 +16,17 @@ Maquetado en HTML para el administrador de paquetes de la empresa paraguaya de c
 - Menu vertical interactivo y animado
 - Facil de manipular y codigo fuente comentado
 
-
 ## Archivos
 
 Se pueden utilizar en todos los navegadores que soporten HTML5 y CSS3. Los archivos y directorios que contiene son:
 
-
-| Plugin | README |
+| Carpeta | Utilidad |
 | ------ | ------ |
-| login.html | Pantalla de Acceso de usuarios|
-| template.html | Manejo de los roles de los usuarios |
-| paquetes.html | Registro de Paquetes |
+| ../ (Raíz) | Plantillas de registros y accesos |
+| ./modals | Todo lo que aparecerá como modal o popup |
+| ./datos-personales-empresa | Plantillas de registro a empresa(s) |
+| ./datos-personales-persona | Plantillas de registro a persona(s) |
+| ./dashboard | Todo lo que se vea adentro de la plataforma con la sesión iniciada |
 | ./assets | Iconografía & vectores |
 | ./css | Estilos utilizados |
 
@@ -34,6 +34,7 @@ Se pueden utilizar en todos los navegadores que soporten HTML5 y CSS3. Los archi
 
 - Lilian Redes (Product Owner)
 - Juan José Garcera (Product SM)
+- ENOC Barrientos (Software SM)
 - Bettina Olmedo (Product Design)
 - Nicolas Espinola (Developer)
 

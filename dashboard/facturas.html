@@ -14,20 +14,218 @@
 
 </head>
 <body style="background-color: var(--off-white); margin: 0px;">
-    <div class="d-flex flex-row justify-content-left">
-        <img src="../assets/ui/side-facturas.svg" alt="menu" class="menu-side" >
-        <div class="d-flex flex-column mx-5">
-            <div class="d-flex flex-row align-items-center  justify-content-between mt-3" style="width: 75vw;">
-            <!--Buscar paquete por nombre o código de tracking-->
-                <div class="d-flex head-wrap mr-5">
-                    <div class="d-flex dashboard-wrap">
-                        <input type="text" class="search-dashboard little-text-regular w-100" placeholder="Buscar paquete por nombre o código de tracking" >
-                        <button class="btn-search-dashboard"><img src="../assets/ui/search-lilac.svg"</button>
-                    </div>
-                    <img src="../assets/ui/switch-on.svg" alt="switch-on">
-                    <p class="little-text-sb m-0 text-color-dark-gray">Busqueda global</p>
+    <div class="menu-clientes flex-column position-fixed" style="z-index:10">
+        <div class="d-flex flex-column align-items-start menu-items" style="gap: 25px;">
+            <div class="main-menu-comps" style="gap: 25px;">
+                <img src="../assets/ui/logo-lillac.svg" alt="logo" class="w-100 visually-hidden">
+                <img src="../assets/ui/chevron-left-active.svg" alt="chev" class="menu-collapse" width="20px">
+            </div>
+            <img src="../assets/ui/menu-separator.svg" class="separator-menu" alt="separador" width="95%" height="2px"/>
+            <div class="w-100 list-menu">
+                <div class="d-flex menu-button align-items-center" style="gap:12px">
+                    <img src="../assets/ui/inicio.svg" alt="home" width="20px">
+                    <p class="m-0 little-text-sb ">Inicio</p>
                 </div>
-                <div class="user-menu ml-5">
+                <div class="d-flex menu-button align-items-center" style="gap:12px">
+                    <img src="../assets/ui/pendiente.svg" alt="home" width="20px">
+                    <p class="m-0 little-text-sb">Pendientes</p>
+                </div>
+                <div class="d-flex menu-button align-items-center" style="gap:12px">
+                    <img src="../assets/ui/retirados.svg" alt="home" width="20px">
+                    <p class="m-0 little-text-sb ">Retirados</p>
+                </div>
+                <div class="d-flex menu-button align-items-center" style="gap:12px">
+                    <img src="../assets/ui/facturas.svg" alt="home" width="20px">
+                    <p class="m-0 little-text-sb">Facturas</p>
+                </div>
+                <img src="../assets/ui/menu-separator.svg" class="separator-menu my-3" alt="separador" width="95%" height="2px"/>
+                <div class="d-flex menu-button menu-notification align-items-center" style="gap:12px">
+                    <div class="position-relative">
+                        <img src="../assets/ui/retirar-paquetes.svg" alt="home" width="15px">
+                        <span class="notification-badge">5</span>
+                    </div>
+                    <p class="m-0 little-text-sb">Retirar</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 menu-extra" style="gap:12px">
+            <div class="d-flex menu-sub-btn" style="gap:10px">
+                <img src="../assets/ui/shield-tick.svg" alt="terms" width="20px">
+                <p class="xs-text-regular m-0  visually-hidden">Términos y condiciones</p>
+            </div>
+            <div class="d-flex menu-sub-btn" style="gap:10px">
+                <img src="../assets/ui/annotation-question.svg" alt="terms" width="20px">
+                <p class="xs-text-regular m-0  visually-hidden">Soporte</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-0">
+        <div class="row pt-3">
+            <div class="col-12 col-md-2 empty-col">
+                
+
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column mx-1">
+                <div class="container d-none d-lg-block">
+                    <div class="row">
+                    <!--Buscar paquete por nombre o código de tracking-->
+                        <div class="d-flex head-wrap pr-3">
+                            <div class="d-flex dashboard-wrap">
+                                <input type="text" class="search-dashboard little-text-regular w-100" placeholder="Buscar paquete por nombre o código de tracking" >
+                                <button class="btn-search-dashboard"><img src="../assets/ui/search-lilac.svg"</button>
+                            </div>
+                            <div style="min-width: 60px !important;">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                    <span class="switch-text on">On</span>
+                                    <span class="switch-text off">Off</span>
+                                </label>
+                            </div> 
+                            <p class="little-text-sb m-0 text-color-dark-gray">Busqueda global</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-responsive d-flex justify-content-between d-lg-none w-100">
+                    <button class="btn-search-mobile"><img src="../assets/ui/search-lilac.svg"></button>
+                    <div class="d-flex user-menu mb-3">
+                        <a href="#" class="little-text-sb text-color-dark-gray"><image src="../assets/ui/chat.svg" alt="chat-bot"></a>
+                        <!--bell img-->
+                        <a href="#" class="little-text-sb text-color-dark-gray"><image src="../assets/ui/bell.svg" alt="bell"></a>
+                        <img src="../assets/ui/user-menu-bar.svg" alt="user-menu-bar">
+                        <div class="d-flex justify-content-between align-items-center" style="gap:10px">
+                            <img src="../assets/ui/user.svg" alt="user">
+                            <img src="../assets/ui/chevron-down-white.svg" alt="chevron-down">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                    
+                    <div class="d-flex flex-column w-100">
+                        <div class="w-100 my-3 d-flex justify-content-between align-items-center">
+                            <h3 class="med-text-sb text-color-black-lilac">Facturas</h3>
+                            <div class="d-flex w-50 align-items-center">
+                                <p class="xs-text-regular text-color-dark-gray m-0 w-25 pr-2">Filtrar por</p>
+                                <select class="input-field little-text-regular text-color-black-lilac w-100">
+                                    <option>Todos</option>
+                                    <option>Miami (En origen)</option>
+                                    <option>En Tránsito</option>
+                                    <option>Ubicando</option>
+                                    <option>Disponible</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid m-0 w-100 mb-2 pb-2" >
+                            <div class="row container-paquete paquetes d-flex align-items-center justify-content-center py-3 px-3">
+                            <div class="col-9 d-flex flex-column justify-content-center p-0" style="width: 287px;">
+                                <div class="d-flex pb-1" style="gap:15px;">
+                                    <p class="little-text-sb text-color-dark-lilac m-0">Soporte motor y caja Honda</p>
+                                </div>
+                                <p class="xs-text-regular text-color-dark-gray m-0 track">Tracking: <b>8872654208175278276537997652478</b></p>
+                            </div>
+                            <div class="factura-paq factura-options col-2 d-flex flex-lg-row flex-column justify-content-around align-items-center p-0" style="border-radius: 10px; background-color: #F9F8FE;">
+                               <a href="#"><img src="../assets/ui/download-grey.svg"></a>
+                               <a href="#"><img src="../assets/ui/print-grey.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex w-100 mb-3 align-items-center justify-content-end " >
+                            <p class="xs-text-regular m-0">Página 1 de 5</p>
+                            <img src="../assets/ui/chevron-left-disabled.svg" width="20px" alt="chevron-left">
+                            <img src="../assets/ui/chevron-right-active.svg" width="20px" alt="chevron-left">
+                        </div>
+                        
+
+
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="col d-flex flex-column">
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex user-menu mb-3">
                     <a href="#" class="little-text-sb text-color-dark-gray"><image src="../assets/ui/chat.svg" alt="chat-bot"></a>
                     <!--bell img-->
                     <a href="#" class="little-text-sb text-color-dark-gray"><image src="../assets/ui/bell.svg" alt="bell"></a>
@@ -38,20 +236,46 @@
                         <img src="../assets/ui/chevron-down-white.svg" alt="chevron-down">
                     </div>
                 </div>
-            </div>
-            <div class="d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column mr-5">
-                    <h3 class="med-text-sb mt-4 text-color-black-lilac">Facturas</h3>
-                    <img class="mt-3" style="filter: drop-shadow(0px 4px 20px rgba(227, 225, 237, 0.6));" src="../assets/ui/factura-card.svg" alt="factura-card">
-                    <img class="mt-3" style="filter: drop-shadow(0px 4px 20px rgba(227, 225, 237, 0.6));" src="../assets/ui/factura-card.svg" alt="factura-card">
-                    <img class="mt-3" style="filter: drop-shadow(0px 4px 20px rgba(227, 225, 237, 0.6));" src="../assets/ui/factura-card.svg" alt="factura-card">
-                    <img class="mt-3" style="filter: drop-shadow(0px 4px 20px rgba(227, 225, 237, 0.6));" src="../assets/ui/factura-card.svg" alt="factura-card">
-                </div>
-                <div class="d-flex flex-column mt-4 ml-5">
-                    <img src="../assets/ui/prealerta.svg" alt="prealerta" width="350px">
+                <div class="card-calc d-flex flex-column align-items-start p-4 w-100" style="gap:10px; height: 240px; margin-bottom: 55px;">
+                    <div class="d-flex py-2">
+                        <img src="../assets/ui/file-plus-02.svg" width="20px" class="mr-1" alt="prealerta">
+                        <p class="small-text-sb text-color-black-lilac m-0">Hacer una prealerta</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="small-text-regular text-color-dark-gray">Si te gustaría avisarnos acerca de un paquete entrante carga la factura de tu compra a través de este link.</p>
+                    </div>
+                    <button class="btn-fr btn-shw-1 little-text-sb w-100 mr-2 my-2 p-0 py-3"><img src="../assets/ui/plus.svg" alt="pin"/> Cargar factura</button>
                 </div>
             </div>
+        </div>  
+
         </div>
     </div>
 </body>
+
+<script>
+const menuCollapse = document.querySelector('.menu-collapse');
+let isCollapsed = false;
+
+menuCollapse.addEventListener('click', function() {
+    const visuallyHiddenElements = document.querySelectorAll('.visually-hidden');
+    visuallyHiddenElements.forEach(element => {
+        element.style.display = 'none';
+    });
+
+    const menuClientes = document.querySelector('.menu-clientes');
+    if (isCollapsed) {
+        menuClientes.classList.remove('menu-items-collapse');
+        visuallyHiddenElements.forEach(element => {
+            element.style.display = 'flex';
+        });
+    } else {
+        menuClientes.classList.add('menu-items-collapse');
+    }
+
+    isCollapsed = !isCollapsed;
+});
+
+</script>
+
 </html>

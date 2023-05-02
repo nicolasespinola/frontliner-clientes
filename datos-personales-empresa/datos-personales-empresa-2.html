@@ -12,19 +12,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</head>
-<body style="background-color: #8E37ED; margin: 0px;">
-    <div class="d-flex flex-row justify-content-between">
-
-        <div class="d-flex flex-column justify-content-between align-items-start w-sm-100" style="height: 100vh; width:100vw; padding: 30px 0px 55px 50px; background-color: #8E37ED; border-radius: 0px 80px 80px 0px;">
-            <img src="../assets/ui/logo-white.svg" alt="logo-variation-1" height="39px"/>
-            <div class="d-flex flex-column justify-content-center align-items-center box-sh datos-pers-box">
+    <body style="background-color: #8E37ED; margin: 0px;">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-column justify-content-between align-items-start w-sm-100 box-content-datos" style=" width:100vw; padding: 30px 0px 55px 50px; background-color: #8E37ED; border-radius: 0px 80px 80px 0px;">
+                <img src="../assets/ui/logo-white.svg" class="logo-wh my-4" alt="logo-variation-1" height="39px"/>
+                <div class="d-flex flex-column align-items-center box-sh datos-pers-box">
                 <h2 class="sub-text-bold text-color-black-lilac m-0 p-0 mb-2">
                     Datos opcionales
                 </h2>
                 <p class="little-text-regular text-center">Completa estos datos si son pertinentes</p>
                 <div class="d-flex flex-column w-100" style="gap:10px;">
-                  <div class="w-100 d-flex flex-row" style="gap:10px;">
+                  <div class="w-100 d-flex flex-row align-items-end" style="gap:10px;">
                     <div class="input w-50">
                         <p class="xs-text-sb text-color-dark-gray">Nombre de contacto o representante </p>
                         <div class="d-flex" style="gap:12px">
@@ -34,7 +32,7 @@
                     <div class="input w-50">
                         <p class="xs-text-sb text-color-dark-gray">Celular del representante </p>
                         <div class="d-flex">
-                          <select class="input-field little-text-regular text-color-black-lilac" style="border-radius: 10px 0px 0px 10px; width: 40%;">
+                          <select class="input-field little-text-regular text-color-black-lilac select-cellphone" style="border-radius: 10px 0px 0px 10px; width: 40%;">
                               <option value="1">+595</option>
                                 <option value="2">+54</option>
                                 <option value="3">+55</option>
@@ -57,15 +55,15 @@
                 </div>
                 <div class="w-100 d-flex flex-row" style="gap:10px;">
                     <div class="input w-100">
-                        <p class="xs-text-sb text-color-dark-gray">Adjunta la foto de tu documento </p>
+                        <p class="xs-text-sb text-color-dark-gray">Adjunta la foto de la cédula del representante <span class="text-color-red">*</span> </p>
                         <div class="d-flex file-item" style="gap:12px">
                             <div>
-                                <div class="d-flex align-items-center justify-content-center"  style="flex: none; order: 0; flex-grow: 0; position: absolute; margin: 20px 65px;">
+                                <div class="d-flex align-items-center justify-content-center file-up-login"  style="flex: none; order: 0; flex-grow: 0; position: absolute; margin: 20px 65px;">
                                 
                     
                                     <img src="../assets/ui/upload-lilac.svg" alt="icon-upload" height="24px"/>
                                     <p class="xs-text-sb text-color-lilac m-0 p-0 ml-2">Selecciona un archivo</p>
-                                    <p class="xs-text-regular text-color-dark-gray m-0 p-0 ml-2">o arrástralo y suéltalo aquí</p>
+                                    <p class="d-none d-md-block xs-text-regular text-color-dark-gray m-0 p-0 ml-2">o arrástralo y suéltalo aquí</p>
                                 </div>
                                 
 
@@ -82,7 +80,7 @@
                 
             </div>
         </div>
-        <h5 class="xs-text-regular text-color-white m-0 mt-3 p-0 align-self-center">
+        <h5 class="d-none d-md-block xs-text-regular text-color-white m-0 mt-3 p-0 align-self-center">
             Copyright © 2015, FRONTLINER. 
         </h5>
 

@@ -14,8 +14,26 @@
 
 </head>
 <body style="background-color: var(--lilac-100); margin: 0px;">
-    <div class="d-md-flex align-items-center justify-content-center py-5" style="height:100vh">
-        <img src="../assets/ui/editar-factura.svg" alt="logo" class="logo" style="height: 100%;">
+    <div class="d-flex" style="min-height: 100vh;">
+        <div class="container modal-container p-5" style="background-color: #F9F8FE; max-width: 438px !important;">
+            <div class="d-flex align-items-start" >
+                <div class="d-flex flex-column align-items-center" style="gap:10px">
+                    <h4 class="med-text-sb text-color-black-lilac m-0">Eliminar persona autorizada</h4>
+                    <p class="little-text-regular text-color-black-lilac text-center">¿Estás seguro de que deseas eliminar a esta persona autorizada?</p>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="row px-2 d-flex justify-content-center">
+                    <button class="col-md-5 col-12 btn-wh m-1 order-1 order-md-2">
+                        <img src="../assets/ui/cancel-btn.svg" width="18px"/>
+                        <p class="small-text-sb text-color-dark-red m-0">Eliminar</p>
+                    </button>
+                    <button class="col-md-5 col-12 btn-fr btn-shw-1 m-1 order-2 order-md-1">
+                        <p class="small-text-sb text-color-white m-0">Cancelar</p>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
