@@ -14,7 +14,7 @@ Maquetado en HTML para la aplicación web de clientes de la empresa paraguaya de
 - Colores y branding respetado al momento del desarrollo
 - Vectores de alta calidad importados para las graficas e iconos
 - Menu vertical interactivo y animado
-- Facil de manipular y codigo fuente comentado
+- Facil de manipular
 
 ## Archivos
 
