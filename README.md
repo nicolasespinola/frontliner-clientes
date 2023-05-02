@@ -4,7 +4,7 @@
 
 Maquetado en HTML para la aplicación web de clientes de la empresa paraguaya de courier  [Frontliner](https://frontliner.com.py/).
 
-- Adaptado para escritorio
+- Adaptado para escritorio/tablets/móviles
 - Estilos adaptados a la paleta de colores
 - ✨ Uso de [Boostrap 4.3.1](https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css).
 
