@@ -44,6 +44,14 @@
     line-height: 41px;
 }
 
+.sub-text-sb {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+}
+
 .sub-text-bold {
     font-family: 'Inter';
     font-style: normal;
