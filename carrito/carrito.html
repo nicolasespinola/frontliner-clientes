@@ -283,19 +283,19 @@
                 <div class="entrega-box d-flex flex-column w-100 mb-3 py-3 px-4">
                     <h3 class="text-color-black-lilac small-text-sb">Método de entrega</h3>
                     <div class="row metodos-entrega-container w-100 p-2 d-flex flex-row" style="gap:5px">
-                        <button class="col metodo-entrega-btn-active xs-text-sb">
+                        <button class="col metodo-entrega-btn-active xs-text-sb metodo-delivery">
                             Delivery
                         </button>
-                        <button class="col metodo-entrega-btn-disabled xs-text-sb">
+                        <button class="col metodo-entrega-btn-disabled xs-text-sb metodo-lockers-carry">
                             Lockers
                         </button>
-                        <button class="col metodo-entrega-btn-disabled xs-text-sb">
+                        <button class="col metodo-entrega-btn-disabled xs-text-sb metodo-lockers-carry">
                             Carry Out
                         </button>
                     </div>
                     <div class="row w-100 d-flex justify-content-between align-items-center py-3">
-                        <p class="p-0 m-0 little-text-regular col-4">Delivery a:</p>
-                        <select class="input-field little-text-regular text-color-black-lilac col-8" style="border-radius: 15px;">
+                        <p class="p-0 m-0 little-text-regular col-4 d-deliver">Delivery a:</p>
+                        <select class="input-field little-text-regular text-color-black-lilac col-8 d-deliver" style="border-radius: 15px;">
                             <option value="1">Asuncion</option>
                             <option value="2">Ciudad del Este</option>
                             <option value="3">Encarnacion</option>
@@ -303,6 +303,8 @@
                             <option value="5">Villarrica</option>
                             <option value="6">Capiata</option>
                         </select>
+                        <p class="p-0 m-0 little-text-regular col-4 d-locker-carry">Sucursal:</p>
+                        <p class="p-0 m-0 little-text-sb col-4 text-right d-locker-carry">Casa Matriz</p>
                     </div>
                         <h3 class="med-text-sb" style="align-self: start !important;">
                             Resumen
@@ -403,6 +405,36 @@ menuCollapse.addEventListener('click', function() {
 
     isCollapsed = !isCollapsed;
 });
+
+// Obtener todos los botones de entrega
+// Obtener el contenedor de los botones de entrega
+const contenedorEntrega = document.querySelector('.metodos-entrega-container');
+
+// Agregar un controlador de eventos clic al contenedor
+contenedorEntrega.addEventListener('click', function(event) {
+  // Obtener el botón clicado
+  const botonClicado = event.target;
+
+  // Comprobar si el botón clicado es deshabilitado
+  if (botonClicado.classList.contains('metodo-entrega-btn-disabled')) {
+    // Buscar el botón activo
+    const botonActivo = document.querySelector('.metodo-entrega-btn-active');
+
+    // Cambiar el botón activo a deshabilitado
+    botonActivo.classList.remove('metodo-entrega-btn-active');
+    botonActivo.classList.add('metodo-entrega-btn-disabled');
+
+    // Cambiar el botón deshabilitado clicado a activo
+    botonClicado.classList.remove('metodo-entrega-btn-disabled');
+    botonClicado.classList.add('metodo-entrega-btn-active');
+  }
+});
+
+
+
+
+
+
 
 </script>
 
