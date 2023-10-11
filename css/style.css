@@ -358,6 +358,13 @@ select {
     transition: 300ms;
 }
 
+.btn-invoice-active {
+    border-style: solid !important;
+    border-width: 0px 0px 2.5px 0px !important;
+    border-color: var(--lilac-100) !important;
+    border-radius: 0px !important;
+}
+
 .modal-container {
     background-color: white; 
     max-width: 715px !important; 

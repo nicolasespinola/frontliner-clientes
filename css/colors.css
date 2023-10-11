@@ -46,7 +46,7 @@
 }
 
 .text-color-green {
-    color: var(--green-100);
+    color: var(--green-100) !important;
 }
 
 .text-color-blue {
